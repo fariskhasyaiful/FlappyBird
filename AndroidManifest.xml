@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="0.1"
+    android:installLocation="2"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.DefaultCompany.FlappyBird"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="29" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:glEsVersion="0x30000" />
+
+    <uses-feature
+        android:name="android.hardware.vulkan.version"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:label="@ref/0x7f030000"
+        android:icon="@ref/0x7f020000">
+
+        <activity
+            android:theme="@ref/0x7f040001"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:launchMode="2"
+            android:screenOrientation="10"
+            android:configChanges="0x40003fff"
+            android:hardwareAccelerated="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+
+        <meta-data
+            android:name="unity.splash-mode"
+            android:value="0" />
+
+        <meta-data
+            android:name="unity.splash-enable"
+            android:value="true" />
+
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <meta-data
+            android:name="unity.build-id"
+            android:value="f7bbfea1-0e55-4363-81b3-5e94647fd065" />
+    </application>
+</manifest>
